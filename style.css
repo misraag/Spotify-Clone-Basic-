@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+/* font-family: 'Varela Round', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: antiquewhite;
+}
+.page {
+  height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  font-family: ubuntu, sans-serif;
+}
+.navbar ul li {
+  margin-left: 40px;
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar .list img {
+  width: 1.5rem;
+  margin: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* CONTAINER */
+.container {
+  min-height: 60vh;
+  background-image: url(bg.jpg);
+  background-color: black;
+  color: white;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  display: flex;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+  /* background-repeat: no-repeat; */
+  text-align: center;
+}
+.containerImage {
+  width: 100%;
+}
+h1 {
+  font-size: 1.5rem;
+}
+/* BOTTOM BAR */
+.bottom {
+  position: sticky;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 120px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.progressBar {
+  width: 80vw;
+  margin: 12px auto;
+  cursor: pointer;
+}
+
+.icons i {
+  cursor: pointer;
+  margin: 0 3px;
+}
+.songList {
+  width: 40%;
+}
+
+.songItem {
+  height: 25px;
+  display: flex;
+  background-color: white;
+  color: black;
+  border-radius: 34px;
+  margin: 8px auto;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  width: 80%;
+}
+.afterSelect {
+  background-color: rgb(58, 160, 17);
+}
+.songItem img {
+  margin: 0 15px;
+  border-radius: 50px;
+  width: 25px;
+}
+
+.songs {
+  margin-top: 30px;
+}
+
+.songlistplay i {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  margin-top: 25px;
+  font-family: "Varela Round", sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.timebar {
+  display: flex;
+  align-items: center;
+}
+#timer {
+  margin: 0 7px;
+}
